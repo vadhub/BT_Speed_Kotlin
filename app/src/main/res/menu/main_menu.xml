@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!--Создаём кнопки для управления -->
+    <!--Кнопка для установления подключения -->
+    <!--Указываем айди кнопки, её название, порядок следования кнопки в меню, определяем поведение
+    элементов меню и указываем значок для отображения кнопки, вместо текста-->
+    <item
+        android:id="@+id/button_connect"
+        android:title="connect BT"
+        android:orderInCategory="100"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_bluetooth_connected"
+        />
+    <!--Кнопка для выбора устройства из списка -->
+    <item
+        android:id="@+id/button_listBT"
+        android:title="list BT"
+        android:orderInCategory="200"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_list_of_bt"
+        />
+</menu>
