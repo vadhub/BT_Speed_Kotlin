@@ -1,20 +1,24 @@
 package com.example.bt_speed_kotlin
 
-import android.bluetooth.BluetoothAdapter
+import com.example.bt_speed_kotlin.model.ThreadForBTConnection
+import com.example.bt_speed_kotlin.screens.main.DataViewListener
 
-class ConnectBT(private val adapter: BluetoothAdapter) {
+//private val adapter: BluetoothAdapter,
+class ConnectBT( var dataViewListener: DataViewListener) {
+
     lateinit var threadForConnection: ThreadForBTConnection
+
     fun connect(mac: String){
         //проверяем включен ли блютуз и не пустой ли мак адрес
-        if(adapter.isEnabled && mac.isNotEmpty()) {
+//        if(adapter.isEnabled && mac.isNotEmpty()) {
             //получаем мак адрес адаптера устройства с которым хотим соединиться
-            val device = adapter.getRemoteDevice(mac)
+//            val device = adapter.getRemoteDevice(mac)
             //если не null, то продолжаем
-            device.let {
-                threadForConnection = ThreadForBTConnection(it)
+//            device.let {it,
+                threadForConnection = ThreadForBTConnection( dataViewListener)
                 threadForConnection.start()
-            }
-        }
+//            }
+//        }
     }
 
     fun sendMSG(message: String){

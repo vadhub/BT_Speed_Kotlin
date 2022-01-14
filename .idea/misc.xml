@@ -7,10 +7,13 @@
         <entry key="..\:/Users/User/AndroidStudioProjects/BT_Speed_Kotlin/app/src/main/res/layout/activity_main_bt.xml" value="0.17863247863247864" />
         <entry key="..\:/Users/User/AndroidStudioProjects/BT_Speed_Kotlin/app/src/main/res/layout/listitem.xml" value="0.17863247863247864" />
         <entry key="..\:/Users/User/AndroidStudioProjects/BT_Speed_Kotlin/app/src/main/res/menu/main_menu.xml" value="0.17863247863247864" />
+        <entry key="app/src/main/res/layout/activity_list_bt.xml" value="0.302536231884058" />
+        <entry key="app/src/main/res/layout/activity_main_bt.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/listitem.xml" value="0.302536231884058" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">

@@ -8,7 +8,9 @@ import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.example.bt_speed_kotlin.databinding.ListitemBinding
 
-class BtAdapter(private val listener: listenOfListBT) : ListAdapter<BtItem, BtAdapter.Holder_Item>(Comparator_Item()) {
+class BtAdapter(private val listener: listenOfListBT) : ListAdapter<BtItem, BtAdapter.Holder_Item>(
+    Comparator_Item()
+) {
 
     //этот класс будет содержать все шаблоны списка
     class Holder_Item(view: View) : RecyclerView.ViewHolder(view){
@@ -25,8 +27,9 @@ class BtAdapter(private val listener: listenOfListBT) : ListAdapter<BtItem, BtAd
 
         companion object{
             //функция которая для каждого элемента создаёт свой Holder_Item, но с разными ссылками
-            fun create(parent: ViewGroup): Holder_Item{
-                return Holder_Item(LayoutInflater.from(parent.context).inflate(R.layout.listitem,
+            fun create(parent: ViewGroup): Holder_Item {
+                return Holder_Item(LayoutInflater.from(parent.context).inflate(
+                    R.layout.listitem,
                     parent, false))
             }
         }

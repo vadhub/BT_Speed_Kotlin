@@ -13,7 +13,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BT_Speed_Kotlin">
         <activity
-            android:name=".ActivityMainBT"
+            android:name=".screens.main.ActivityMainBT"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
